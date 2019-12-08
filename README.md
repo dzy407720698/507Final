@@ -22,4 +22,6 @@ c) Using flask_sqlalchemy to open the Flask, so you don't need to create the new
 3. go to http://localhost:5000/
 
 There have four nevigation pages:index(Welcome page),search page, movie info page, and rating info page.
-In the search page,
+In the search page, you could search the movie title or director name.
+In the movie info page, you could check the movie information.
+In the rating info page, you could check the rating information.
