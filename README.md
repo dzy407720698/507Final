@@ -10,9 +10,10 @@ Mac: use Terminal to run/Windows: use Anaconda Prompt
 3. go to http://localhost:5000/
 
 ## Code Structured:
-I have one Class called cache which contains five functions. Through this class, I could using BeautifulSoup to get the data.
+a. I have one Class called cache which contains five functions. Through this class, I could using BeautifulSoup to get the data.
   1. _has_entry_expired function make sure the scraping data is new. 
-  2. get
+  2. get function scraping the data from website, and saving it to the local by call the _save_to_disk function.
+
 
 I use beautifulsoup
 
