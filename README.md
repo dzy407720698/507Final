@@ -18,7 +18,8 @@ c) Using flask_sqlalchemy to open the Flask, so you don't need to create the new
 
 ## How to Run the Program
 1. Open Terminal/Anaconda Prompt
-2. type python (file path)
+2. type: python (file path)
 3. go to http://localhost:5000/
 
-There have 
+There have four nevigation pages:index(Welcome page),search page, movie info page, and rating info page.
+In the search page,
