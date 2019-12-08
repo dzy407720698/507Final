@@ -290,6 +290,20 @@ def index():
 def search():
     return render_template('search.html')
 
+@app.route('/search_results')
+def results():
+    if request.method == 'GET':
+        keyword = request.args.get('keyword')
+        keyword = keyword if keyword else 'Endgame'
+        results = session.query(Movies).all()
+        results_lst = []
+        for i in results:
+            if keyword in i.Title:
+                results_lst.append(i)
+            if keyword in i.Director:
+                results_lst.append(i)
+        return render_template('results.html',keyword = keyword, results = results_lst)
+    
 @app.route('/movies')
 def movies():
     movies = Movies.query.all()
