@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Search</title>
+  </head>
+  <body>
+    <div class="container p-3 mb-2 bg-warning text-dark">
+        <div class="mt-5 jumbotron p-3 mb-2 bg-warning text-dark">
+            <h1 class="row justify-content-center align-self-center">Search Current Database</h1>
+            <p class="row justify-content-center align-self-center">Search movies already in the data base.</p>
+            <hr/>
+            <a class="btn btn-outline-primary" href="/" role="button">Home</a>
+            <a class="btn btn-outline-primary" href="/search" role="button">Search</a>
+            <a class="btn btn-outline-primary" href="/movies" role="button">Show Searched Movie Info</a>
+            <a class="btn btn-outline-primary" href="/ratings" role="button">Show Searched IMDB Rating Info</a>
+        </div>
+
+        <form action="http://localhost:5000/search_results" method="GET">
+            <div class="form-group">
+                <label for="keyword">Keyword</label>
+                <input type="text" class="form-control" name="keyword" id="keyword" placeholder="Search for a movie title or director name">
+                <small id="keywordHelp" class="form-text text-muted">You can search for song name or artist name.</small>
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Search</button>
+        </form>
+    </div>
+
+
+  </body>
+</html>

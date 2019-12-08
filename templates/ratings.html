@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Rating Info</title>
+  </head>
+  <body>
+    <div class="container p-3 mb-2 bg-warning text-dark">
+        <div class="mt-5 jumbotron p-3 mb-2 bg-warning text-dark">
+            <h1 class="row justify-content-center align-self-center">Ratings Info</h1>
+            <hr class="my-4">
+            <a class="btn btn-outline-primary" href="/" role="button">Home</a>
+            <a class="btn btn-outline-primary" href="/search" role="button">Search</a>
+            <a class="btn btn-outline-primary" href="/movies" role="button">Show Searched Movie Info</a>
+            <a class="btn btn-outline-primary" href="/ratings" role="button">Show Searched IMDB Rating Info</a>
+        </div>
+        <ul class="mb-5 list-group">
+            {% for r in results %}
+                <li class="list-group-item">
+                  <p> {{ r }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+  </body>
+</html>
