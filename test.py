@@ -24,7 +24,7 @@ class PartFour(unittest.TestCase):
     def test_csv_size(self):
         self.csv_file = open('movie_info.csv','r')
         self.row_reader = self.csv_file.readlines()
-        self.assertTrue(len(self.row_reader) >= 50, "Testing that there are at least 50 lines of data in the CSV")
+        self.assertTrue(len(self.row_reader) >= 100, "Testing that there are at least 100 lines of data in the CSV")
         self.csv_file.close()
 
 
